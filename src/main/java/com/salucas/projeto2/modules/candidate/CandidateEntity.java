@@ -1,15 +1,15 @@
 package com.salucas.projeto2.modules.candidate;
 
+import jakarta.persistence.Entity;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;
 import lombok.Data;
-import jakarta.persistence.Entity;
 
 
 import java.util.UUID;
 
 @Data
-@Entity("candidate")
+@Entity
 public class CandidateEntity {
     private UUID id;
     private String name;
